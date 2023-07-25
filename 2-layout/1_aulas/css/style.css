@@ -6,3 +6,42 @@ h1 {
 .btn-primary{
     background-color: red;
 }
+
+div{
+    background-color: aqua;
+}
+
+/* sm >= 576px */
+@media (min-width: 576px){
+    h1{
+        color: blue;
+    }
+}
+
+/* Md >= 768px */
+@media (min-width: 768px){
+    h1{
+        color: green;
+    }
+}
+
+/* lg >= 992px */
+@media (min-width: 992px){
+    h1{
+        color: purple;
+    }
+}
+
+/* xl >= 1200px */
+@media (min-width: 1200px){
+    h1{
+        color: rgb(58, 67, 24);
+    }
+}
+
+/* xxl >= 1400px */
+@media (min-width: 1400px){
+    h1{
+        color: rgb(190, 145, 66);
+    }
+}
