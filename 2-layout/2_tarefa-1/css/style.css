@@ -1,0 +1,18 @@
+.container{
+    background-color: #ccc;
+}
+
+
+.col{
+    border: 1px solid red;
+    height: 50px;
+}
+/* Colunas ímpares */
+.col:nth-child(odd){
+    background-color: aqua;
+}
+
+/* Colunas pares */
+.col:nth-child(even){
+    background-color: burlywood;
+}
