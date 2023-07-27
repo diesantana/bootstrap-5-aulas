@@ -11,6 +11,16 @@ div{
     background-color: aqua;
 }
 
+
+.row div{
+    border: 1px solid red;
+}
+
+#altura .row{
+    height: 300px;
+    margin-bottom: 200px;
+}
+
 /* sm >= 576px */
 @media (min-width: 576px){
     h1{
