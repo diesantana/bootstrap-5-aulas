@@ -1,0 +1,28 @@
+.container{
+    background-color: #ccc;
+}
+
+.row{
+    border: 1px solid red;
+}
+
+.col{
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.bi-airplane{
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.bi-alarm{
+    color: rgb(69, 130, 16);
+    font-size: 1.5rem;
+}
+
+.bi-android2{
+    color: rgb(255, 34, 0);
+    font-size: 1.5rem;
+}
