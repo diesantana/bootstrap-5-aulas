@@ -1,0 +1,21 @@
+/* Instruções */
+.instrucoes{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.instrucoes h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.instrucoes li{
+    font-size: 1.1rem;
+}
+
+.container-img{
+    margin-bottom: 15px;
+}
+
+.container-list{
+    justify-content: space-around;
+}
