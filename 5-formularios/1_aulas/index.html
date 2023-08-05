@@ -127,10 +127,86 @@
 
         <!-- Datalist -->
         <div class="col-md-4 m-4">
-            <h2>Datalist</h2>
+            <h2>Outros Inputs</h2>
             <form>
-                <label for="cidade" class="form-label">Selecione a cidade</label>
-                <input type="text" name="cidade" id="cidade">
+                <!-- Datalist -->
+                <div class="mb-4">
+                    <label for="cidades" class="form-label">selecione uma cidades</label>
+                    <input list="datalistOptions" id="cidades" class="form-control" placeholder="Busque a sua cidade">
+                    <datalist id="datalistOptions">
+                        <option value="São Paulo">
+                        <option value="Rio de janeiro">
+                        <option value="Belo Horizonte">
+                    </datalist>
+                </div>
+
+                <!-- select -->
+                <div class="mb-4">
+                    <label for="cidades2" class="form-label">Selecine a sua cidade</label>
+                    <select name="cidades2" id="cidades2" class="form-select">
+                        <option selected>Selecione uma cidade</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Belo Horizonte</option>
+                        <option value="3">Porto Alegre</option>
+                    </select>
+
+                    <label for="frutas" class="form-label">Frutas</label>
+                    <select name="frutas" id="frutas" class="form-select" multiple>
+                        <option value="1">Maçã</option>
+                        <option value="2">Banana</option>
+                        <option value="3">Pera</option>
+                        <option value="4">Limão</option>
+                    </select>
+                </div>
+
+                <!-- Checkbox e radio button -->
+                <div class="mb-4">
+                    <h3>Seleciona as suas cores favoritas</h3>
+                    <div class="form-check">
+                        <input type="checkbox" name="black" id="black" value="black">
+                        <label for="black">Preto</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="blue" id="blue" value="blue">
+                        <label for="blue">Azul</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="red" id="red" value="red" disabled>
+                        <label for="red">Vermelho</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="email" checked>
+                        <label for="email">Quer receber os e-mails de propaganda?</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Qual você quer?</h2>
+                    <div class="form-check">
+                        <input type="radio" name="grupo1" id="option1" class="form-check-input" value="option1">
+                        <label for="option1" class="form-check-label">Opção 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="grupo1" id="option2" class="form-check-input" value="option2">
+                        <label for="option2" class="form-check-label">Opção 2</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Switch</h2>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="ligar" class="form-check-input">
+                        <label for="ligar" class="form-check-label">input switch padrão</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="ligar" class="form-check-input" checked>
+                        <label for="ligar" class="form-check-label">input switch checked</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="ligar" class="form-check-input" disabled>
+                        <label for="ligar" class="form-check-label">input switch disabled</label>
+                    </div>
+                </div>
             </form>
         </div>
 
