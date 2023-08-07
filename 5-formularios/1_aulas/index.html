@@ -64,7 +64,7 @@
 
     <div class="col-md-4 m-4">
         <form>
-            <h2>Crie seu post</h2>
+            <h2>Crie seu post com form-control em textarea</h2>
             <div class="mb-3">
                 <label for="tituloPost" class="label-control">Título</label>
                 <input type="text" class="form-control" name="tituloPost" id="tituloPost" placeholder="Digite o título do post">
@@ -79,7 +79,7 @@
 
         <!-- readonly  -->
         <div class="col-md-4 m-4">
-            <h2>Formulário de cadastro</h2>
+            <h2>Formulário de cadastro com readonly</h2>
             <form>
                 <div class="mb-3">
                     <label for="inputEmail" class="form-label">Email com o atributo</label>
@@ -125,7 +125,7 @@
             </form>
         </div>
 
-        <!-- Datalist -->
+        <!-- Outros elementos input -->
         <div class="col-md-4 m-4">
             <h2>Outros Inputs</h2>
             <form>
@@ -207,9 +207,82 @@
                         <label for="ligar" class="form-check-label">input switch disabled</label>
                     </div>
                 </div>
+
+                <!-- input group  -->
+                <div class="mb-4">
+                    <h2>Input group</h2>
+                    <div class="input-group">
+                        <input type="email" name="email" id="emailId" placeholder="Digite o seu email" class="form-control">
+                        <span class="input-group-text">@</span>
+                    </div>
+                </div>
+
+                <!-- floating label (label flutuante)-->
+                <div class="mb-4">
+                    <h2>Floating label</h2>
+                    <div class="form-floating mb-4">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu email">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-floating mb-2">
+                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Digite a sua senha">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </div>
+
+                
             </form>
         </div>
+        <hr>
 
+        <!-- Layout com formulário -->
+        <div class="container">
+            <h2 class="text-center mb-4">Laytou com formulários</h2>
+            <form  class="row g-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Nome</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Digite o seu nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Sobrenome</label>
+                    <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Digite o seu Sobrenome">
+                </div>
+                <div class="col-12">
+                    <label for="address" class="form-label">Rua</label>
+                    <input type="text" name="address" id="address" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCidade" class="form-label">Cidade</label>
+                    <input type="text" name="inputCidade" id="inputCidade" class="form-control" placeholder="Cidade">
+                </div>
+                <div class="col-6 col-md-4">
+                    <label for="inputCidade" class="form-label">Estado</label>
+                    <select name="estado" id="estado" class="form-select" aria-label="Selecione o estado">
+                        <option selected>Selecione o estado</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                    </select>
+                </div>
+                <div class="col-6 col-md-2">
+                    <label for="inputCep" class="form-label">CEP</label>
+                    <input type="text" name="inputCep" id="inputCep" class="form-control" placeholder="Digite o cep">
+                </div>
 
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input">
+                        <label for="newsletter" class="form-check-label">Receber novidades?</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
 </body>
 </html>
