@@ -9,13 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Estilo customizado -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <!-- container enunciado -->
     <div class="container mt-3">
         <div class="row justify-content-center">
-            <h1 class="text-center">Tarefa 03</h1>
+            <h1>Tarefa 03</h1>
             <ul class="col-md-8">
                 <li>Crie um formulário de cadastro de produto</li>
                 <li>Insira campos como título, descrição, preço e outros que você achar interessante</li>
@@ -30,31 +31,46 @@
     <!-- Inicio tarefa 03 -->
     <div class="container">
         <h2 class="text-center">Cadastro de produtos</h2>
-        <form class="row gy-3">
+        <form class="row gy-3" novalidate>
             <div class="col-md-6">
                 <label for="nomeProduto" class="form-label">Nome do produto</label>
-                <input type="text" name="nomeProduto" id="nomeProduto" class="form-control" placeholder="Insira o nome">
+                <input type="text" name="nomeProduto" id="nomeProduto" class="form-control" placeholder="Insira o nome" required>
+                <div class="invalid-feedback">Nome do produto é obrigatório</div>
             </div>
             <div class="col-md-6">
                 <label for="categoriaProduto" class="form-label">Categoria</label>
-                <select name="categoriaProduto" id="categoriaProduto" class="form-select">
-                    <option selected>Selecione a categoria</option>
+                <select name="categoriaProduto" id="categoriaProduto" class="form-select" required>
+                    <option selected disabled value="">Selecione a categoria</option>
                     <option value="smartphone">Smartphone</option>
                     <option value="notebook">Notebook</option>
                     <option value="tv">Televisão</option>
                     <option value="outros">Outros</option>
                 </select>
+                <div class="invalid-feedback">Por favor selecione a categoria</div>
             </div>
             <div class="col-md-4">
                 <label for="precoProduto" class="form-label">Preço</label>
                 <div class="input-group">
                     <span class="input-group-text">R$</span>
-                    <input type="text" name="precoProduto" id="precoProduto" class="form-control" placeholder="Ex: 100,00">
+                    <input type="text" name="precoProduto" id="precoProduto" class="form-control" placeholder="Ex: 100,00" required>
+                    <div class="invalid-feedback">Preço do produto é obrigatório</div>
+
                 </div>
             </div>
             <div class="col-12">
                 <label for="descricaoProduto" class="form-label">Descrição</label>
-                <textarea class="form-control" name="descricaoProduto" id="descricaoProduto" rows="3"></textarea>
+                <textarea class="form-control" name="descricaoProduto" id="descricaoProduto" rows="3" required></textarea>
+                <div class="invalid-feedback">Por favor insira uma descrição</div>
+
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" name="estoque" id="estoque" class="form-check-input">
+                    <label for="estoque" class="form-check-label">Produto em estoque?</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
             </div>
         </form>
     </div>
