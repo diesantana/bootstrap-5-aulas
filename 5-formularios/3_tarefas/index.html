@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - tarefa 03</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- container enunciado -->
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <h1 class="text-center">Tarefa 03</h1>
+            <ul class="col-md-8">
+                <li>Crie um formulário de cadastro de produto</li>
+                <li>Insira campos como título, descrição, preço e outros que você achar interessante</li>
+                <li>Crie um checkbox, que vai sinalizar se o produto está em estoque</li>
+                <li>Select para seleção de categoria</li>
+                <li>Insira validações (opcional)</li>
+            </ul>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Inicio tarefa 03 -->
+    <div class="container">
+        <h2 class="text-center">Cadastro de produtos</h2>
+        <form class="row gy-3">
+            <div class="col-md-6">
+                <label for="nomeProduto" class="form-label">Nome do produto</label>
+                <input type="text" name="nomeProduto" id="nomeProduto" class="form-control" placeholder="Insira o nome">
+            </div>
+            <div class="col-md-6">
+                <label for="categoriaProduto" class="form-label">Categoria</label>
+                <select name="categoriaProduto" id="categoriaProduto" class="form-select">
+                    <option selected>Selecione a categoria</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="tv">Televisão</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="precoProduto" class="form-label">Preço</label>
+                <div class="input-group">
+                    <span class="input-group-text">R$</span>
+                    <input type="text" name="precoProduto" id="precoProduto" class="form-control" placeholder="Ex: 100,00">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="descricaoProduto" class="form-label">Descrição</label>
+                <textarea class="form-control" name="descricaoProduto" id="descricaoProduto" rows="3"></textarea>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
